@@ -1,0 +1,13 @@
+# No subir archivos de construcción
+target/
+*.class
+
+# No subir configuraciones privadas de NetBeans
+nbproject/private/
+
+# No subir configuraciones de VS Code de tu amiga
+.vscode/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
