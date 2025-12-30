@@ -1,0 +1,3 @@
+Hola Profesor. 
+Esta es una prueba de un archivo de texto plano.
+El servidor lo entrega con el tipo MIME: text/plain.

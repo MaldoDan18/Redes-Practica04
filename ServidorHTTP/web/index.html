@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Servidor Java</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; margin: 40px; background-color: #f0f4f8; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        button { margin: 5px; padding: 10px; cursor: pointer; border: none; border-radius: 4px; color: white; }
+        .get { background: #28a745; } .post { background: #007bff; }
+        .put { background: #ffc107; color: black; } .delete { background: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🚀 Servidor HTTP en Java</h1>
+        <p>Métodos solicitados:</p>
+        
+        <button class="get" onclick="location.href='notas.txt'">Probar GET (Archivo TXT)</button>
+        <button class="get" onclick="location.href='datos.json'">Probar GET (Archivo JSON)</button>
+        
+        <hr>
+        
+        <p>Simulación de métodos (Ver consola de NetBeans):</p>
+        <button class="post" onclick="fetch('/', {method:'POST'}).then(r => alert('Respuesta POST: ' + r.status))">Enviar POST</button>
+        <button class="put" onclick="fetch('/', {method:'PUT'}).then(r => alert('Respuesta PUT: ' + r.status))">Enviar PUT</button>
+        <button class="delete" onclick="fetch('/', {method:'DELETE'}).then(r => alert('Respuesta DELETE: ' + r.status))">Enviar DELETE</button>
+    </div>
+</body>
+</html>
